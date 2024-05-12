@@ -996,14 +996,14 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "1-Oyun ba\u015Flad\u0131\u011F\u0131nda, bir tarif belirtilir. Bu tarife
     g\xF6re yukar\u0131dan gelen belirli malzemelerin do\u011Fru s\u0131rayla yakalanmas\u0131
-    gerekmektedir.\n\n2-Yukar\u0131dan gelen malzemeleri do\u011Fru bir \u015Fekilde
+    gerekmektedir. \n\n2-Yukar\u0131dan gelen malzemeleri do\u011Fru bir \u015Fekilde
     yakalamak i\xE7in barda\u011F\u0131 y\xF6n tu\u015Flar\u0131 ile kontrol etmeniz
-    gerekir. \n\n3-Do\u011Fru malzemeleri yakalad\u0131\u011F\u0131n\u0131zda, i\xE7ecek
-    tarife uygun bir \u015Fekilde tamamlan\u0131r.\n\n4-Yanl\u0131\u015F malzemeleri
-    yakalarsan\u0131z i\xE7ecek lezzetli olmaz ve m\xFC\u015Fteri memnun olmaz.\n\n5-Belirli
-    bir s\xFCre i\xE7inde tarife uygun i\xE7ece\u011Fi tamamlamal\u0131s\u0131n\u0131z.
-    S\xFCre doldu\u011Funda veya hata yapt\u0131\u011F\u0131n\u0131zda, oyun sona
-    erer.\n\n\u0130Y\u0130 E\u011ELENCELER.\n"
+    gerekir. \nsa\u011F y\xF6n ve sol y\xF6n\ntarifi g\xF6rmek i\xE7in W tu\u015Fu,
+    kapamak i\xE7in E tu\u015Fu\n\n3-Malzemeler tarifteki say\u0131ya g\xF6re toplanmas\u0131
+    gerekir. gerekli say\u0131 sa\u011Flad\u0131\u011F\u0131nda say\u0131 ye\u015File
+    d\xF6ner.\n\n4-T\xFCm malzemeler do\u011Fru say\u0131da topland\u0131\u011F\u0131nda
+    b\xF6l\xFCm tamamlan\u0131r. \n\n5-E\u011Fer bir malzeme bile gere\u011Finden
+    fazla toplan\u0131rsa b\xF6l\xFCm ba\u015Ftan ba\u015Flar.\n\n\u0130Y\u0130 E\u011ELENCELER.\n"
 --- !u!222 &1664511075
 CanvasRenderer:
   m_ObjectHideFlags: 0

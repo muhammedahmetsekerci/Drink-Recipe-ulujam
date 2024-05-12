@@ -22,7 +22,7 @@ public class bardak : MonoBehaviour
     bool panelActive = false;
     void Start()
     {
-
+        Time.timeScale = 1f;
     }
 
     public void ShowPanel()
@@ -39,6 +39,12 @@ public class bardak : MonoBehaviour
         if (ekmek.color == Color.green && pirinc.color == Color.green && seker.color == Color.green && vitamin.color == Color.green && tuz.color == Color.green)
         {
             SceneManager.LoadScene(2);
+        }
+
+        if (tuzsayi > 3 || sekersayi > 7 || vitaminsayi > 4 || (pirincsayi + ekmeksayi) > 7)
+        {
+            Time.timeScale = 0f;
+            SceneManager.LoadScene(3);
         }
     }
 
