@@ -107,7 +107,7 @@ public class bardak : MonoBehaviour
             tuzsayi++;
             tuz.text = tuzsayi.ToString();
             Debug.Log("tuz alındı.");
-            if (tuzsayi == 7)
+            if (tuzsayi == 3)
             {
                 tuz.color = Color.green;
             }
@@ -118,7 +118,7 @@ public class bardak : MonoBehaviour
             vitaminsayi++;
             vitamin.text = vitaminsayi.ToString();
             Debug.Log("vitamin alındı.");
-            if (vitaminsayi == 7)
+            if (vitaminsayi == 4)
             {
                 vitamin.color = Color.green;
             }
