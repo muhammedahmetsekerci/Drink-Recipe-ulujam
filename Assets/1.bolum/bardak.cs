@@ -16,15 +16,42 @@ public class bardak : MonoBehaviour
     [SerializeField] Text vitamin;
     int vitaminsayi = 0;
     // Start is called before the first frame update
+
+    public GameObject panelToShow;
+    bool panelActive = false;
     void Start()
     {
 
     }
 
+    public void ShowPanel()
+    {
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            panelToShow.SetActive(true);
+            panelActive = true;
+        }
+    }
+
+    public void HidePanel()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            panelToShow.SetActive(false);
+            panelActive = false;
+        }
+    }
     // Update is called once per frame
     void Update()
     {
-
+        if (panelActive)
+        {
+            HidePanel();
+        }
+        if (panelActive == false)
+        {
+            ShowPanel();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
