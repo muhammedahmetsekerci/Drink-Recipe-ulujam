@@ -5,9 +5,7 @@ using UnityEngine;
 public class malzemeler : MonoBehaviour
 {
     [SerializeField] GameObject[] materials;
-    [SerializeField] float secondSpawn = 0.5f;
-    [SerializeField] float minTras;
-    [SerializeField] float maxTras;
+    [SerializeField] float secondSpawn = 0.2f;
     void Start()
     {
         StartCoroutine(MaterialSpawn());
@@ -18,8 +16,7 @@ public class malzemeler : MonoBehaviour
     {
         while (true)
         {
-            var wanted = Random.Range(minTras, maxTras);
-            var position = new Vector3(wanted, transform.position.y);
+            var position = new Vector3(Random.Range(-5.8f, 5.8f), transform.position.y);
             GameObject gameObject = Instantiate(materials[Random.Range(0, materials.Length)],
             position, Quaternion.identity);
             yield return new WaitForSeconds(secondSpawn);
