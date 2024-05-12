@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class bardak : MonoBehaviour
 {
@@ -33,6 +34,14 @@ public class bardak : MonoBehaviour
         }
     }
 
+    public void malzemeKontrol()
+    {
+        if (ekmek.color == Color.green && pirinc.color == Color.green && seker.color == Color.green && vitamin.color == Color.green && tuz.color == Color.green)
+        {
+            SceneManager.LoadScene(2);
+        }
+    }
+
     public void HidePanel()
     {
         if (Input.GetKeyDown(KeyCode.E))
@@ -61,30 +70,59 @@ public class bardak : MonoBehaviour
             ekmeksayi++;
             ekmek.text = ekmeksayi.ToString();
             Debug.Log("ekmek alındı.");
+
+            if ((ekmeksayi + pirincsayi) == 7)
+            {
+                ekmek.color = Color.green;
+                pirinc.color = Color.green;
+            }
+
+            malzemeKontrol();
         }
         if (other.tag == "pirinc")
         {
             pirincsayi++;
             pirinc.text = pirincsayi.ToString();
             Debug.Log("pirinc alındı.");
+            if ((ekmeksayi + pirincsayi) == 7)
+            {
+                ekmek.color = Color.green;
+                pirinc.color = Color.green;
+            }
+            malzemeKontrol();
         }
         if (other.tag == "seker")
         {
             sekersayi++;
             seker.text = sekersayi.ToString();
             Debug.Log("seker alındı.");
+            if (sekersayi == 7)
+            {
+                seker.color = Color.green;
+            }
+            malzemeKontrol();
         }
         if (other.tag == "tuz")
         {
             tuzsayi++;
             tuz.text = tuzsayi.ToString();
             Debug.Log("tuz alındı.");
+            if (tuzsayi == 7)
+            {
+                tuz.color = Color.green;
+            }
+            malzemeKontrol();
         }
         if (other.tag == "vitamin")
         {
             vitaminsayi++;
             vitamin.text = vitaminsayi.ToString();
             Debug.Log("vitamin alındı.");
+            if (vitaminsayi == 7)
+            {
+                vitamin.color = Color.green;
+            }
+            malzemeKontrol();
         }
     }
 }

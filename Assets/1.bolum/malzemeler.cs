@@ -5,7 +5,7 @@ using UnityEngine;
 public class malzemeler : MonoBehaviour
 {
     [SerializeField] GameObject[] materials;
-    [SerializeField] float secondSpawn = 0.2f;
+    [SerializeField] float secondSpawn = 1f;
     void Start()
     {
         StartCoroutine(MaterialSpawn());

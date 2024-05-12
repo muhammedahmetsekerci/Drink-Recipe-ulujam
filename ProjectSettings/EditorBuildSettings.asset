@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/1.bolum.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Level 1 Completed.unity
+    guid: 67e5c710c0112bd41b409ba4a9b4ea24
   m_configObjects: {}
